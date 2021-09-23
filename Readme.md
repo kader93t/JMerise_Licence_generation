@@ -30,7 +30,7 @@ JMerise is an amazing Merise tool to build MCD diagrams if you can buy it please
   > --to-destination 127.0.0.1:3000
 
 - Open the url http://127.0.0.1:3000 on the browser and enter your mac address (Optional) and click generate
-- Copy the Licence key \*\*\*dont shutdown the server
+- Copy the Licence key **dont shutdown the server**
 - Open JMerise and Enter the copied key, enter your e-mail and click activate.
 - Congratulation you have a licence for two years.
 - Now you can shutdown the server and run the following commande if your not using iptable before : sudo iptables --table nat --flush

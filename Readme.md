@@ -2,7 +2,7 @@
 
 ## Get a free licence of JMerise application
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://www.jfreesoft.com/)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](http://www.jfreesoft.com/JMerise/)
 
 JMerise is an amazing Merise tool to build MCD diagrams if you can buy it please buy it.
 

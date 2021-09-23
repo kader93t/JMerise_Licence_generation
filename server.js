@@ -8,10 +8,12 @@ require('dotenv').config();
 
 const getKey = require('./prepare_licence');
 let mac = '';
+
 // address.one().then((err, address) => {
 //   mac = address;
 //   console.log('mac : ' + address);
 // });
+
 address.all(function (err, all) {
   const adresses = JSON.parse(JSON.stringify(all, null, 2));
   for (const property in adresses) {
@@ -20,6 +22,8 @@ address.all(function (err, all) {
     }
   }
 });
+
+let mac2 = '';
 const app = expresse();
 const port = process.env.PORT || 3000;
 
@@ -31,23 +35,23 @@ app.set('views', viewsPath);
 app.get('/', (re1, res) => {
   res.render('index');
 });
+
 app.get('/createLic', (req, res) => {
   const date = moment();
   const result = getKey(date);
-  mac = req.params.mac;
-  console.log(req.query);
-  writeVEnv(result.dateDebut, result.dateFin, result.key, (err, fd) => {
-    console.log('success');
-  });
+  mac2 = req.query.mac;
+
+  writeVEnv(result.dateDebut, result.dateFin, result.key, (err, fd) => {});
   res.header('Access-Control-Allow-Origin', '*');
   res.send(result);
 });
 
 app.get('*', (req, res) => {
-  console.log(req.query);
+  console.log(req.originalUrl);
   res.render('response', {
     date: process.env.DATE_DEB,
     mac,
+    mac2,
     responseServer: 'OK06',
     dateFin: process.env.DATE_FIN,
     key: process.env.KEY,

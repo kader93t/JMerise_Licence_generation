@@ -20,6 +20,7 @@ JMerise is an amazing Merise tool to build MCD diagrams if you can buy it please
 - > git clone https://github.com/kader93t/JMerise_Licence_generation.git
 - > cd JMerise_Licence_generation
 - > npm install
+- > node server.js
 - > sudo iptables \  
   > --table nat \
   > --append OUTPUT \

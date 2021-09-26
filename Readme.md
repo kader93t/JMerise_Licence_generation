@@ -1,6 +1,6 @@
 # JMerise 0.5 Licence generation (Activation with a key)
 
-## Get a free licence of JMerise application
+## Get a free licence of JMerise application ( cracked )
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](http://www.jfreesoft.com/JMerise/)
 
